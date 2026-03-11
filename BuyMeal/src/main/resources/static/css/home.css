@@ -1,0 +1,145 @@
+*{
+    /*border: 1px solid red; */
+}
+
+/* Color */
+:root {
+    --lead: #212121;
+    --gold-finger: #f2bd12;
+    --eye-ball: #fffdf7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #fff;
+}
+/* Basic Styling */
+.btn{
+    margin-block: .5rem;
+    text-align: center;
+}
+
+/* User Icon CSS */
+.order-menu-hide{
+    display: flex;
+    justify-content: space-around;
+    position:absolute;
+    top:-100%;
+    left:20%;
+    width:60%;
+    padding:2rem;
+    background-color: var(--pure-white);
+    border:.1rem solid var(--gold-finger);
+    border-radius:2rem;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    background-color: var(--hint-yellow);
+}
+.order-menu{
+    top:15%;
+    left:20%;
+    visibility: visible;
+}
+.cart-list{
+    height:50vh;
+    overflow: auto;
+}
+.order-transaction{
+    width:35%;
+}
+.order-transaction img{
+    padding: .5rem;
+}
+.order-total{
+    text-align: center;
+    font-size: 1.5rem;
+    color:var(--lead);
+    font-weight: bold;
+}
+.order-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-block: .5rem;
+    margin-inline: .3rem;
+}
+.qty-container{
+    font-size: 1rem;
+    font-weight: bold;
+    color:var(--gold-finger);
+    text-align: center;
+}
+/* User Logog */
+.user-logo{
+    background-color: var(--hint-yellow);
+    color: var(--lead);
+    position:absolute;
+    top:12%;
+    right:2%;
+    font-size: .8rem;
+    font-weight: bold;
+    padding-inline: .5rem;
+    padding-block: .2rem;
+    border-radius:1rem;
+    visibility: hidden;
+}
+.user-logo-active{
+    top:12%;
+    right:2%;
+    visibility: visible;
+}
+.user-logo-active2{
+    top:12%;
+    right:35%;
+    visibility: visible;
+}
+.orderbox-item{
+	display:flex;
+	justify-content:space-around;
+}
+
+.qty-container{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline:.2rem;
+}
+
+/* Media Query */
+@media screen and (max-width:1300px){
+
+    .order-btn{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:1150px){
+
+    .order-menu-hide{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:90%;
+        left:5%;
+    }
+    .order-transaction{
+        width:50%;
+        margin-top: 1.5rem;
+    }
+    .cart-list{
+        height: 40vh;
+    }
+
+}
+@media screen and (max-width:850px){
+
+    .order-transaction{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:600px){
+
+    .item{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
